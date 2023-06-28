@@ -36,3 +36,15 @@ function delete($data) {
     $stmt->execute($data);
 }
 
+function update($data) {
+    $sql = "UPDATE categories SET name = :name WHERE id = :id";
+    $stmt = prepareSQL($sql);
+    $stmt->execute($data);
+}
+
+function findById($data) {
+    $sql = "SELECT * FROM categories WHERE id = :id";
+    $stmt = prepareSQL($sql);
+    $stmt->execute($data);
+    return $stmt -> fetch();
+}
