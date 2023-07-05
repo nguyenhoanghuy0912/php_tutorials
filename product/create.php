@@ -12,12 +12,15 @@
 </head>
 <body>
 <div class="container mt-3">
-    <div class="container-fluid"><h3>Create Product</h3></div>
+    <div class="container-fluid"><h3>Create Category</h3></div>
     <a href="./index.php" class="btn btn-primary">Back</a>
     <form method="POST" action="./store.php">
         <div class="mb-3">
             <label for="" class="form-label">Name</label>
-            <input required type="text" class="form-control" name="name" placeholder="Enter name ...">
+            <input required type="text" class="form-control" name="name" placeholder="Enter name...">
+            <br>
+            <label for="" class="form-label">Category ID</label>
+            <input required type="text" class="form-control" name="id_category" placeholder="Enter category ID...">  
         </div>
         <button type="submit" class="btn btn-success">Submit</button>
     </form>
